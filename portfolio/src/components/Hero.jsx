@@ -33,7 +33,7 @@ const Hero = () => {
             </button>
 
             <button className="px-6 py-3 border border-cyan-400 rounded-lg">
-             <a href="/Vishal-Kumar-Bhardwaj-resume.pdf" target="_blank">Resume</a>
+             <a href="/Vishal-Kumar-Bhardwaj-Resume.pdf" target="_blank">Resume</a>
             </button>
           </div>
         </div>
