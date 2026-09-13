@@ -10,7 +10,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-[#2b2b2b] p-6 rounded-xl border border-cyan-500/20  transition"
+              className="bg-panel-alt p-6 rounded-xl border border-accent/20 transition hover:border-accent/50"
             >
               <h3 className="text-xl font-bold mb-3">{project.title}</h3>
 
@@ -21,6 +21,7 @@ const Projects = () => {
                     <img
                       src={project.thumb}
                       alt={project.title}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform transform-gpu duration-500 group-hover:scale-110 "
                     />
                     <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
@@ -30,7 +31,7 @@ const Projects = () => {
 
               <div className="flex flex-wrap gap-2 mt-4">
                 {project.tech.map((item) => (
-                  <span key={item} className="text-cyan-400 text-sm">
+                  <span key={item} className="text-accent text-sm">
                     #{item}
                   </span>
                 ))}

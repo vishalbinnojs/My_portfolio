@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -7,16 +7,26 @@ const Contact = () => {
         <h2 className="text-5xl font-bold mb-6">Let's Work Together</h2>
 
         <p className="text-gray-400 mb-10">
-          Open for <span className="text-cyan-400">React</span> and Frontend
+          Open for <span className="text-accent">React</span> and Frontend
           opportunities.
         </p>
 
-        <div className="flex justify-center gap-8 text-3xl">
-          <a href="https://github.com/vishalbinnojs" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="hover:text-cyan-400" />
+<div className="flex justify-center gap-8 text-3xl">
+          <a
+            href="https://github.com/vishalbinnojs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <FaGithub className="hover:text-accent" />
           </a>
-          <a href="https://www.linkedin.com/in/vishal-bhardwaj -443558308/" target="_blank" rel="noopener noreferrer  ">
-            <FaLinkedin className="hover:text-cyan-400" />
+          <a
+            href="https://www.linkedin.com/in/vishal-bhardwaj-443558308/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <FaLinkedin className="hover:text-accent" />
           </a>
         </div>
       </div>

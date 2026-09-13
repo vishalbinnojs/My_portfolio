@@ -1,15 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "portfolio";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+  --color-base-100: #222;
+  --color-base-200: #2a2a2a;
+  --color-base-300: #2b2b2b;
+  --color-base-content: #ffffff;
+  --color-primary: #00e5ff;
+  --color-primary-content: #000000;
+  --color-secondary: #00e5ff;
+  --color-secondary-content: #000000;
+  --color-accent: #00e5ff;
+  --color-accent-content: #000000;
+  --color-neutral: #2b2b2b;
+  --color-neutral-content: #ffffff;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme {
+  --color-background: #222;
+  --color-panel: #2a2a2a;
+  --color-panel-alt: #2b2b2b;
+  --color-accent: #00e5ff;
+  --shadow-accent-glow: 0 0 40px rgba(0, 229, 255, 0.15);
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 body {
-  background: #222;
+  background: var(--color-background);
   color: white;
-  font-family: Inter, sans-serif;
+  font-family: var(--font-sans);
 }
 
 ::-webkit-scrollbar {

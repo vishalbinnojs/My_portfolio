@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="py-24">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-12">
-          About <span className="text-cyan-400">Me</span>
+          About <span className="text-accent">Me</span>
         </h2>
 
         <p className="text-gray-300 leading-relaxed text-lg">

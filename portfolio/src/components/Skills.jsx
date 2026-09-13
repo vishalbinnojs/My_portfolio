@@ -15,7 +15,7 @@ const Skills = () => {
           {skills.map((skill) => (
             <div
               key={skill}
-              className="px-5 py-3 rounded-full bg-[#2b2b2b] border border-cyan-500/20 hover:border-cyan-400"
+              className="px-5 py-3 rounded-full bg-panel-alt border border-accent/20 hover:border-accent transition-colors"
             >
               {skill}
             </div>
