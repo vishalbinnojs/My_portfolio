@@ -6,13 +6,13 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
 
         <div>
-          <p className="text-cyan-400 mb-4">
+          <p className="text-accent mb-4">
             Hi, I'm
           </p>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
             Vishal Kumar
-            <span className="block text-cyan-400">
+            <span className="block text-accent">
               Bhardwaj
             </span>
           </h1>
@@ -27,23 +27,31 @@ const Hero = () => {
             using React and Tailwind CSS.
           </p>
 
-          <div className="mt-8 flex gap-4">
-            <button className="px-6 py-3 bg-cyan-400 text-black rounded-lg font-semibold">
-             <a href="#projects">View Projects</a>
-            </button>
+<div className="mt-8 flex gap-4">
+            <a
+              href="#projects"
+              className="px-6 py-3 bg-accent text-black rounded-lg font-semibold hover:brightness-110 transition"
+            >
+              View Projects
+            </a>
 
-            <button className="px-6 py-3 border border-cyan-400 rounded-lg">
-             <a href="/Vishal-Kumar-Bhardwaj-Resume.pdf" target="_blank">Resume</a>
-            </button>
+            <a
+              href="/Vishal_Kumar_Bhardwaj_newResume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-accent text-accent rounded-lg hover:bg-accent hover:text-black transition"
+            >
+              Resume
+            </a>
           </div>
         </div>
 
         <motion.div
           animate={{ y: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 3 }}
-          className="bg-[#2a2a2a] rounded-xl p-8 border border-cyan-500/20 shadow-[0_0_40px_rgba(0,229,255,0.15)]"
+          className="bg-panel rounded-xl p-8 border border-accent/20 shadow-accent-glow"
         >
-          <pre className="text-cyan-400">
+          <pre className="text-accent">
 {`const developer = {
   name: "Vishal",
   role: "React Developer",
